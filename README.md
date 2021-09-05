@@ -3,11 +3,11 @@
 
 A simple mobile app for keeping up records of our daily expenses.
 
-<img src="https://user-images.githubusercontent.com/61490175/132122654-4c8f71f0-b1ca-4af6-b4cb-a35821d5180b.jpg" width="200">
+<img src="https://user-images.githubusercontent.com/61490175/132122663-7920bd08-129e-4514-8fd0-b183bdb37a20.jpg" width="400">
 
-![IMG_20210905_151808](https://user-images.githubusercontent.com/61490175/132122660-47ffaccd-a8b6-4081-b96a-d712a19fe873.jpg)
+<img src="https://user-images.githubusercontent.com/61490175/132122660-47ffaccd-a8b6-4081-b96a-d712a19fe873.jpg" width="400">
 
-![IMG_20210905_151756](https://user-images.githubusercontent.com/61490175/132122663-7920bd08-129e-4514-8fd0-b183bdb37a20.jpg)
+<img src="https://user-images.githubusercontent.com/61490175/132122654-4c8f71f0-b1ca-4af6-b4cb-a35821d5180b.jpg" width="400">
 
 
 A new Flutter project.
