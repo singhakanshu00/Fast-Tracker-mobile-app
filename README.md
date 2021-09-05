@@ -3,7 +3,7 @@
 
 A simple mobile app for keeping up records of our daily expenses.
 
-![IMG_20210905_151819](https://user-images.githubusercontent.com/61490175/132122654-4c8f71f0-b1ca-4af6-b4cb-a35821d5180b.jpg)
+<img src="https://user-images.githubusercontent.com/61490175/132122654-4c8f71f0-b1ca-4af6-b4cb-a35821d5180b.jpg" width="48">
 
 ![IMG_20210905_151808](https://user-images.githubusercontent.com/61490175/132122660-47ffaccd-a8b6-4081-b96a-d712a19fe873.jpg)
 
