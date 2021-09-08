@@ -11,30 +11,35 @@ class TransactionList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: MediaQuery.of(context).size.height * 0.6,
       child: transactions.isEmpty
-          ? Container(
-              margin: EdgeInsets.symmetric(vertical: 25),
-              child: Column(
-                children: [
-                  Text(
-                    'Transactions List is empty!',
-                    style: Theme.of(context).textTheme.title,
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Container(
-                    height: 200,
-                    child: Image.asset(
-                      'assests/images/waiting.png',
-                      fit: BoxFit.cover,
+          ? LayoutBuilder(builder: (ctx, constraints) {
+              return Container(
+                margin: EdgeInsets.symmetric(vertical: 25),
+                child: Column(
+                  children: [
+                    Container(
+                      child: Text(
+                        'Transactions List is empty!',
+                        style: Theme.of(context).textTheme.title,
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            )
-          : ListView.builder(     // it takes infinite amount of height
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: constraints.maxHeight * 0.5,
+                      child: Image.asset(
+                        'assests/images/waiting.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            })
+          : ListView.builder(
+              // it takes infinite amount of height and is always scrollable
               itemBuilder: (ctx, index) {
                 return Card(
                   margin: EdgeInsets.symmetric(vertical: 4, horizontal: 5),
@@ -42,7 +47,8 @@ class TransactionList extends StatelessWidget {
                   child: ListTile(
                     leading: FittedBox(
                       child: Container(
-                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                         decoration: BoxDecoration(
                             border: Border.all(
                               color: Theme.of(context).primaryColorDark,
@@ -71,11 +77,18 @@ class TransactionList extends StatelessWidget {
                         fontSize: 15,
                       ),
                     ),
-                    trailing: FloatingActionButton(
-                      backgroundColor: Colors.red,
-                      child: Icon(Icons.delete),
-                      onPressed: () => deleteTx(transactions[index].id),
-                    ),
+                    trailing: MediaQuery.of(context).size.width > 360
+                        ? FlatButton.icon(
+                            onPressed: () => deleteTx(transactions[index].id),
+                            textColor: Theme.of(context).errorColor,
+                            icon: Icon(Icons.delete),
+                            label: Text('Delete'),
+                          )
+                        : IconButton(
+                            onPressed: () => deleteTx(transactions[index].id),
+                            icon: Icon(Icons.delete),
+                            color: Theme.of(context).errorColor,
+                          ),
                   ),
                 );
               },

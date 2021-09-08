@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Transaction {
   String id;
   String title;
@@ -5,9 +7,9 @@ class Transaction {
   DateTime date;
 
   Transaction({
-    required this.id,
-    required this.title,
-    required this.price,
-    required this.date,
+    @required this.id,
+    @required this.title,
+    @required this.price,
+    @required this.date,
   });
 }
