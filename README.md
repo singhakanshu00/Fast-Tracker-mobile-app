@@ -13,10 +13,10 @@ A simple mobile app for keeping up records of our daily expenses.
 
 <B>Landscape Mode<B>
 
-<img src="https://user-images.githubusercontent.com/61490175/132547849-f36a77c3-e483-4db9-9d00-0fbde35e02f1.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/61490175/132547849-f36a77c3-e483-4db9-9d00-0fbde35e02f1.jpg" width="350" height="200"><Br>
   
   
-<img src="https://user-images.githubusercontent.com/61490175/132547859-05282906-2c1d-4c38-abed-ea0b82817282.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/61490175/132547859-05282906-2c1d-4c38-abed-ea0b82817282.jpg" width="350" height="200">
 
 
 
